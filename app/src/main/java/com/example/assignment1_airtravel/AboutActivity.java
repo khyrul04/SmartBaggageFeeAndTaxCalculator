@@ -27,7 +27,7 @@ public class AboutActivity extends AppCompatActivity {
 
         Button btnGitHub = findViewById(R.id.btnGitHub);
         btnGitHub.setOnClickListener(v -> {
-            String url = "https://github.com/yourusername/excess-baggage-fee-estimator";
+            String url = "https://github.com/khyrul04/SmartBaggageFeeAndTaxCalculator";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(intent);
         });
