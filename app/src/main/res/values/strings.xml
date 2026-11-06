@@ -76,5 +76,5 @@
     <string name="about_copyright">© 2026 AirTravel Tools. All rights reserved.</string>
     <string name="btn_github">View GitHub Repository</string>
     <string name="share_subject">Excess Baggage Fee Estimator App</string>
-    <string name="share_body">Check out the Excess Baggage Fee Estimator app! GitHub: https://github.com/yourusername/excess-baggage-fee-estimator</string>
+    <string name="share_body">Check out the Excess Baggage Fee Estimator app! GitHub: https://github.com/khyrul04/SmartBaggageFeeAndTaxCalculator</string>
 </resources>
