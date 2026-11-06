@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:fillViewport="true"
+    android:clipToPadding="true"
+    android:clipChildren="true"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="true"
+        android:clipChildren="true"
+        android:paddingBottom="60dp">
+
+        <!-- Top Header Bubble Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="22dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="@color/warm_peach">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="18dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@android:drawable/ic_menu_compass"
+                    app:tint="@color/warm_peach"
+                    android:layout_marginEnd="14dp"
+                    android:contentDescription="@string/content_desc_logo" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/top_bubble_title"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/top_bubble_subtitle"
+                        android:textSize="13sp"
+                        android:textColor="@color/warm_peach"
+                        android:layout_marginTop="2dp" />
+
+                </LinearLayout>
+
+                <!-- Share Bubble Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnShareBubble"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:minWidth="56dp"
+                    android:minHeight="56dp"
+                    android:layout_marginStart="8dp"
+                    app:icon="@android:drawable/ic_menu_share"
+                    app:iconTint="@color/warm_peach"
+                    app:backgroundTint="@color/deep_purple"
+                    app:iconGravity="textStart"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:contentDescription="@string/menu_share" />
+
+                <!-- About Bubble Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAboutBubble"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:minWidth="56dp"
+                    android:minHeight="56dp"
+                    android:layout_marginStart="8dp"
+                    app:icon="@android:drawable/ic_menu_info_details"
+                    app:iconTint="@color/warm_peach"
+                    app:backgroundTint="@color/deep_purple"
+                    app:iconGravity="textStart"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:contentDescription="@string/menu_about" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Quick Actions Card (Baggage Tips & Tax Guide) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="22dp"
+            app:cardBackgroundColor="@color/primary"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="@color/warm_peach">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBaggageTips"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="12sp"
+                    android:text="@string/btn_baggage_tips"
+                    android:textColor="@color/deep_purple"
+                    app:backgroundTint="@color/warm_peach" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTaxGuide"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:textSize="12sp"
+                    android:text="@string/btn_tax_guide"
+                    android:textColor="@color/deep_purple"
+                    app:backgroundTint="@color/coral_pink" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Instructions Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="@color/warm_peach">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rules_header"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/warm_peach"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instructions_text"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:lineSpacingExtra="6dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Input Form Card with Interactive Selectable Cards -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="@color/warm_peach">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inputs_header"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/warm_peach"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Baggage Weight Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                    app:boxBackgroundColor="@color/deep_purple"
+                    app:startIconDrawable="@android:drawable/ic_menu_myplaces"
+                    app:startIconTint="@color/warm_peach"
+                    app:boxStrokeColor="@color/warm_peach"
+                    app:hintTextColor="@color/warm_peach"
+                    android:hint="@string/label_baggage_weight"
+                    tools:ignore="VisualLintContrast,TouchTargetSizeCheck">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etBaggageWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/white"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Ticket Class Selection Header -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_ticket_class"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Interactive Ticket Class Cards Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Economy Select Card -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardEconomySelect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardBackgroundColor="@color/deep_purple"
+                        app:strokeWidth="2dp"
+                        app:strokeColor="@color/warm_peach"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="14dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@android:drawable/ic_menu_view"
+                                app:tint="@color/warm_peach"
+                                android:layout_marginBottom="4dp"
+                                android:contentDescription="@string/content_desc_economy_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/card_economy_title"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/card_economy_desc"
+                                android:textSize="11sp"
+                                android:textColor="@color/warm_peach"
+                                android:layout_marginTop="2dp" />
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Business Select Card -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardBusinessSelect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardBackgroundColor="@color/deep_purple"
+                        app:strokeWidth="1dp"
+                        app:strokeColor="@color/card_stroke"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="14dp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@android:drawable/ic_menu_slideshow"
+                                app:tint="@color/coral_pink"
+                                android:layout_marginBottom="4dp"
+                                android:contentDescription="@string/content_desc_business_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/card_business_title"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/card_business_desc"
+                                android:textSize="11sp"
+                                android:textColor="@color/coral_pink"
+                                android:layout_marginTop="2dp" />
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <!-- Rate per kg Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
+                    app:boxBackgroundColor="@color/deep_purple"
+                    app:startIconDrawable="@android:drawable/ic_menu_agenda"
+                    app:startIconTint="@color/warm_peach"
+                    app:boxStrokeColor="@color/warm_peach"
+                    app:hintTextColor="@color/warm_peach"
+                    android:hint="@string/label_rate"
+                    tools:ignore="VisualLintContrast,TouchTargetSizeCheck">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/white"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Buttons Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btnReset"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/btn_reset"
+                        android:textColor="@color/white"
+                        app:strokeColor="@color/warm_peach" />
+
+                    <Button
+                        android:id="@+id/btnCalculate"
+                        style="@style/Widget.Material3.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/btn_calculate"
+                        android:textColor="@color/deep_purple"
+                        app:backgroundTint="@color/warm_peach" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Results Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/card_bg"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="@color/coral_pink">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_header_icon"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/warm_peach"
+                    android:layout_marginBottom="14dp" />
+
+                <TextView
+                    android:id="@+id/tvExcessWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/placeholder_excess_weight"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvExcessCharge"
+                    android:text="@string/placeholder_excess_charge"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/accent_blue"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvTotalPayable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/placeholder_total_payable"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#81C784" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

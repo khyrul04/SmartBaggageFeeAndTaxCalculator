@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Master UI/UX Palette from User Images -->
+    <color name="deep_purple">#312C51</color>      <!-- #312C51: Deep Midnight Purple -->
+    <color name="slate_purple">#48426D</color>     <!-- #48426D: Muted Slate Purple Cards -->
+    <color name="warm_peach">#F0C38E</color>       <!-- #F0C38E: Warm Peach / Gold Accent -->
+    <color name="coral_pink">#F1AA9B</color>       <!-- #F1AA9B: Warm Coral Pink Accent -->
+
+    <color name="primary">#0E1B48</color>          <!-- #0E1B48: Deep Midnight Navy -->
+    <color name="primary_variant">#0E1F2F</color>    <!-- #0E1F2F: Deep Dark Blue -->
+    <color name="secondary">#C18DB4</color>        <!-- #C18DB4: Dusty Mauve Pink -->
+    <color name="accent_blue">#87A7D0</color>      <!-- #87A7D0: Soft Sky Blue -->
+    <color name="pastel_pink">#E2CAD8</color>      <!-- #E2CAD8: Soft Pastel Pink -->
+
+    <color name="background_light">#312C51</color> <!-- Immersive Deep Midnight Purple Background -->
+    <color name="card_bg">#48426D</color>          <!-- Slate Purple Cards -->
+    <color name="card_stroke">#87A7D0</color>      <!-- Soft Sky Blue Stroke/Border -->
+    <color name="text_dark">#FFFFFF</color>        <!-- Crisp White Text -->
+    <color name="text_muted">#E2CAD8</color>       <!-- Soft Pastel Pink Muted Text -->
+</resources>

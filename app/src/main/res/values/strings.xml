@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">SkyBaggage</string>
+    <string name="title_activity_about">About App &amp; Developer</string>
+
+    <string name="banner_title">Flight Baggage Portal</string>
+    <string name="banner_subtitle">Estimate baggage fees &amp; service tax</string>
+    <string name="content_desc_logo">App Logo</string>
+    <string name="content_desc_economy_icon">Economy Icon</string>
+    <string name="content_desc_business_icon">Business Icon</string>
+
+    <string name="top_bubble_title">SkyBaggage</string>
+    <string name="top_bubble_subtitle">Smart Baggage Fee &amp; Tax Calculator</string>
+
+    <string name="brand_title">SkyBaggage</string>
+    <string name="brand_subtitle">ICT602 Mobile Technology</string>
+    <string name="brand_tagline">Smart Baggage Fee &amp; Tax Calculator</string>
+    <string name="presets_label">Helpful Guides &amp; Tips:</string>
+    <string name="rules_header">Baggage Allowance Rules</string>
+    <string name="inputs_header">Flight &amp; Baggage Inputs</string>
+    <string name="results_header_icon">Calculation Results</string>
+
+    <string name="card_economy_title">Economy</string>
+    <string name="card_economy_desc">20 kg allowance</string>
+    <string name="card_business_title">Business</string>
+    <string name="card_business_desc">40 kg allowance</string>
+
+    <string name="btn_baggage_tips">Baggage Tips</string>
+    <string name="btn_tax_guide">Tax &amp; Fee Guide</string>
+
+    <string name="dialog_tips_title">Airport Baggage Tips</string>
+    <string name="dialog_tips_message">1. Weigh Luggage at Home:\nWeigh your luggage before leaving for the airport to avoid surprise fees at check-in.\n\n2. Smart Weight Distribution:\nDistribute heavy items between checked luggage and carry-on bags within limits.\n\n3. Pre-Purchase Allowance:\nPurchase extra baggage online ahead of time to get lower rates than airport counter fees.\n\n4. Check Allowance Limits:\nRemember: Economy gives 20 kg free and Business gives 40 kg free allowance.</string>
+
+    <string name="dialog_guide_title">Calculation &amp; Tax Guide</string>
+    <string name="dialog_guide_message">1. Free Allowance:\n• Economy Class = 20 kg free allowance\n• Business Class = 40 kg free allowance\n\n2. Excess Weight:\nIf your baggage weighs more than your class allowance, subtract the allowance from your total weight (e.g. 25 kg in Economy = 25 kg - 20 kg = 5 kg excess).\n\n3. Excess Charge:\nMultiply your excess weight (kg) by the rate per kg (RM).\n\n4. Total Payable:\nAdd 8% Service Tax to your excess charge (Charge + 8% Tax).</string>
+    <string name="dialog_close">Got It</string>
+
+    <string name="instructions_title">Baggage Allowance &amp; Rules</string>
+    <string name="instructions_text">Economy Class: 20 kg allowance\nBusiness Class: 40 kg allowance\nService Tax: 8% applied on excess charge.</string>
+
+    <string name="section_flight_details">Flight &amp; Baggage Details</string>
+    <string name="section_author_info">Author &amp; Course Information</string>
+    <string name="section_source_code">Source Code &amp; Documentation</string>
+
+    <string name="label_baggage_weight">Baggage Weight (kg)</string>
+    <string name="hint_baggage_weight">e.g., 25.0</string>
+
+    <string name="label_ticket_class">Ticket Class</string>
+    <string name="radio_economy">Economy Class (20 kg allowance)</string>
+    <string name="radio_business">Business Class (40 kg allowance)</string>
+
+    <string name="label_rate">Excess Rate per kg (RM)</string>
+    <string name="hint_rate">e.g., 15.00</string>
+
+    <string name="btn_calculate">Calculate Fee</string>
+    <string name="btn_reset">Reset</string>
+
+    <string name="results_title">Calculation Results</string>
+    <string name="placeholder_excess_weight">Excess Baggage Weight: 0.0 kg</string>
+    <string name="placeholder_excess_charge">Excess Baggage Charge: RM 0.00</string>
+    <string name="placeholder_total_payable">Total Amount Payable (incl. 8% tax): RM 0.00</string>
+
+    <string name="result_excess_weight">Excess Baggage Weight: %.1f kg</string>
+    <string name="result_excess_charge">Excess Baggage Charge: RM %.2f</string>
+    <string name="result_total_payable">Total Amount Payable (incl. 8%% tax): RM %.2f</string>
+
+    <string name="error_empty_weight">Please enter valid baggage weight</string>
+    <string name="error_empty_rate">Please enter valid rate per kg</string>
+    <string name="error_invalid_number">Please enter valid numeric values</string>
+
+    <string name="menu_share">Share App</string>
+    <string name="menu_about">About</string>
+
+    <string name="about_heading">Air Travel Excess Baggage Fee Estimator</string>
+    <string name="about_desc">Designed for calculating air travel excess baggage charges, weight deductions, and service tax accurately.</string>
+    <string name="about_student_details">Developer Details:\n• Name: Muhammad Khyrul Fazlie Bin Azilini\n• Student ID: 2025485306\n• Group: RCS2515B\n• Programme Code: ICT602</string>
+    <string name="about_copyright">© 2026 AirTravel Tools. All rights reserved.</string>
+    <string name="btn_github">View GitHub Repository</string>
+    <string name="share_subject">Excess Baggage Fee Estimator App</string>
+    <string name="share_body">Check out the Excess Baggage Fee Estimator app! GitHub: https://github.com/yourusername/excess-baggage-fee-estimator</string>
+</resources>
